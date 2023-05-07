@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Новая вкладка</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img id="myimg" onclick="reimage()" src="" alt=""> 
+    <div id="search">
+        <input type="text" id="inputs">
+        <button onclick="setLocation()">Go</button>
+    </div>   
+    <div class="favorites">
+        <img class="favoritescontimage" onclick="favOpen(0)" src="images/favicons/osu.png" alt="">
+        <img class="favoritescontimage" onclick="favOpen(1)" src="images/favicons/mail.png" alt="">
+        <img class="favoritescontimage" onclick="favOpen(2)" src="images/favicons/youtube.png" alt="">
+    </div>
+
+    <script>
+        let arr = ['images/kitkat.png', 'images/osu.png', 'images/roflik.png']
+        let now = Math.floor(Math.random() * arr.length)
+        document.getElementById("myimg").src = arr[now]
+    </script>
+</body>
+</html>
