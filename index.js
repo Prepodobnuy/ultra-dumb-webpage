@@ -18,7 +18,7 @@ function setLocation() {
 
 function favOpen(id) {
     let a = [
-        'https://osu.ppy.sh/users/11978262',
+        'https://osu.ppy.sh',
         'https://mail.google.com/mail/u/0/#inbox',
         'https://www.youtube.com/'
     ]
